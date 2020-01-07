@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <base href="/projects/angularjs-todo-list/" />
+    <title>AngularJs Todo List</title>
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body ng-app="toDoList">
+
+    <navbar></navbar>
+    <ng-view></ng-view>
+
+    <!-- AngularJs v1.7 -->
+    <script src="./assets/angular/angular.min.js"></script>
+    <script src="./assets/angular/angular-route.min.js"></script>
+
+    <!-- Application Files -->
+    <script src="./app/app.js"></script>
+    <!-- Service -->
+    <script src="./app/service/database.js"></script>
+    <script src="./app/service/tools.js"></script>
+    <!-- Directive -->
+    <script src="./app/directive/main.js"></script>
+    <!-- Controllers -->
+    <script src="./app/controller/home.controller.js"></script>
+    <script src="./app/controller/addTesk.controller.js"></script>
+    <script src="./app/controller/complete.controller.js"></script>
+    <script src="./app/controller/uncomplete.controller.js"></script>
+    <script src="./app/controller/viewComplete.controller.js"></script>
+</body>
+</html>
